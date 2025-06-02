@@ -1,0 +1,818 @@
+fileFormatVersion: 2
+guid: 049fd9752d519764ea82789978f5e2e8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Oribici_attack_0
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 2129
+        width: 173
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169431dd73d98634a9e5dd8876dd4f60
+      internalID: 1726417423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_1
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 2129
+        width: 163
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd2796683ecb2948ad0b07fbaf8de28
+      internalID: -660828046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_2
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 2129
+        width: 173
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc5bfd9ac9c67249a22388628424edb
+      internalID: 2066412651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_3
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 2129
+        width: 172
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a52104b9f49f545b8d6833cf15795c
+      internalID: -2029401597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_4
+      rect:
+        serializedVersion: 2
+        x: 2068
+        y: 2078
+        width: 173
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d3dc0699b179824fa8f1a52ca80c99b
+      internalID: 400804375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_5
+      rect:
+        serializedVersion: 2
+        x: 2539
+        y: 1969
+        width: 193
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62bb6ef05500d964dbf258259883b67a
+      internalID: -448117805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_6
+      rect:
+        serializedVersion: 2
+        x: 2989
+        y: 2048
+        width: 212
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d955913ef65e01642a47f6964be5cd04
+      internalID: -962855880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_7
+      rect:
+        serializedVersion: 2
+        x: 3499
+        y: 2129
+        width: 163
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebeffc3ff229f3b4aac20c6ee1b0b434
+      internalID: -138158899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_8
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1448
+        width: 154
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e468404d6eb5fcb42a40c5061eb8ceac
+      internalID: -1062352341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_9
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 1468
+        width: 152
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb3ecfbc05274de46812e52364b818cc
+      internalID: 706644196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_10
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 1468
+        width: 173
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0150912359b99f4c9c2bfb84ffbc445
+      internalID: 591184168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_11
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 1468
+        width: 272
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1781902e5052634fa75ec758586a397
+      internalID: -1878147761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_12
+      rect:
+        serializedVersion: 2
+        x: 2059
+        y: 1468
+        width: 292
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb02253671bb4840bfc7c0cb71d886e
+      internalID: 7289923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_13
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 1468
+        width: 334
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41e08e6d644c2f84db577a2156cff8d1
+      internalID: 237131870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_14
+      rect:
+        serializedVersion: 2
+        x: 2989
+        y: 1468
+        width: 253
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d284ad4cfab03a40aeafb63e3f25c65
+      internalID: -1753915688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_15
+      rect:
+        serializedVersion: 2
+        x: 3429
+        y: 1468
+        width: 252
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d7c5474d8702044685affebda05ea20
+      internalID: 1675642227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_16
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 808
+        width: 154
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21c5ea516d11714b9140719819e4a7e
+      internalID: -466719454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_17
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 829
+        width: 152
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95f90d0f0e5453f4c8d9411499bac34a
+      internalID: -1695272496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_18
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 829
+        width: 173
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3128d0eb1ec25f147b64e81bed53e26d
+      internalID: 1937111371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_19
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 829
+        width: 272
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5228dbad669c08d42ad9938293bcac77
+      internalID: -759053412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_20
+      rect:
+        serializedVersion: 2
+        x: 1969
+        y: 829
+        width: 292
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ee0cded857a2042b760b67651ced3c
+      internalID: -153546498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_21
+      rect:
+        serializedVersion: 2
+        x: 2398
+        y: 829
+        width: 334
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d76c5489fed0147aa762c97c36e92c
+      internalID: 1557297407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_22
+      rect:
+        serializedVersion: 2
+        x: 2998
+        y: 829
+        width: 253
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ac5858e5655fc4995739d961a412aa
+      internalID: 1236146699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_23
+      rect:
+        serializedVersion: 2
+        x: 3519
+        y: 829
+        width: 252
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb52c1b946b45bd4d9e6065bd21d6952
+      internalID: -1010840266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_24
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 219
+        width: 193
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71429639fc3ea094abb36f2eea1bf741
+      internalID: 1059180664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_25
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 219
+        width: 173
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114568aa0186e13478333fd16aed0243
+      internalID: 969892272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_26
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 219
+        width: 163
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbdc506a481ec3843b62c029c42e8cfa
+      internalID: 1332283603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_27
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 208
+        width: 163
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044fa16d44081254f831be75dd6e67cb
+      internalID: -1915990750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_28
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 208
+        width: 172
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e2b4babbb0082428c96cf01f4890b4
+      internalID: 131987796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_29
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 208
+        width: 193
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148360aca70554f43aa76a5996c3c279
+      internalID: 1198134817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_30
+      rect:
+        serializedVersion: 2
+        x: 3058
+        y: 208
+        width: 203
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e15cb70b3fb5134ca5f6358d44d565b
+      internalID: 1787790957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_attack_31
+      rect:
+        serializedVersion: 2
+        x: 3538
+        y: 199
+        width: 173
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d8d207b12f9a4b4da03f2c6f41af4de
+      internalID: -1484683693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Oribici_attack_0: 1726417423
+      Oribici_attack_1: -660828046
+      Oribici_attack_10: 591184168
+      Oribici_attack_11: -1878147761
+      Oribici_attack_12: 7289923
+      Oribici_attack_13: 237131870
+      Oribici_attack_14: -1753915688
+      Oribici_attack_15: 1675642227
+      Oribici_attack_16: -466719454
+      Oribici_attack_17: -1695272496
+      Oribici_attack_18: 1937111371
+      Oribici_attack_19: -759053412
+      Oribici_attack_2: 2066412651
+      Oribici_attack_20: -153546498
+      Oribici_attack_21: 1557297407
+      Oribici_attack_22: 1236146699
+      Oribici_attack_23: -1010840266
+      Oribici_attack_24: 1059180664
+      Oribici_attack_25: 969892272
+      Oribici_attack_26: 1332283603
+      Oribici_attack_27: -1915990750
+      Oribici_attack_28: 131987796
+      Oribici_attack_29: 1198134817
+      Oribici_attack_3: -2029401597
+      Oribici_attack_30: 1787790957
+      Oribici_attack_31: -1484683693
+      Oribici_attack_4: 400804375
+      Oribici_attack_5: -448117805
+      Oribici_attack_6: -962855880
+      Oribici_attack_7: -138158899
+      Oribici_attack_8: -1062352341
+      Oribici_attack_9: 706644196
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

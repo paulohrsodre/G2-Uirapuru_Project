@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
         Attack();
         Shooting();
 
-        projectileText.text = "Disparos: " + currentProjectile;
+        //projectileText.text = "Disparos: " + currentProjectile;
     }
 
     public void Walk()
