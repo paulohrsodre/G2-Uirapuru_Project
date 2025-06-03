@@ -171,6 +171,12 @@ public class PlayerController : MonoBehaviour
         healthFull.fillAmount = normalizedHealth;
     }
 
+    public void Heal(int amount)
+    {
+        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+        UpdateHealthBar();
+    }
+
     private void OnDrawGizmosSelected()
     {
         if (attackPoint == null)
