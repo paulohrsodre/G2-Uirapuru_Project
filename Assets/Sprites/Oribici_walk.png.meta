@@ -1,0 +1,818 @@
+fileFormatVersion: 2
+guid: 53849afdf99495e4f832dc4c81fddd8c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Oribici_walk_0
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 2129
+        width: 124
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf00f4b7fb63cca4a9cb051b02d1c186
+      internalID: 261676745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_1
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 2119
+        width: 124
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0def0a88208054fab6e2239b0c5c9a
+      internalID: -672927598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_2
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 2138
+        width: 124
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 551145eb8ee87324f8bcc722c5c9b698
+      internalID: -158705730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_3
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 2138
+        width: 124
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97390e22631e394c9268ae6130ed67a
+      internalID: 1563842381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_4
+      rect:
+        serializedVersion: 2
+        x: 2098
+        y: 2129
+        width: 124
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1caccfd2a1f0e048ae861e6772427b5
+      internalID: -1175177009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_5
+      rect:
+        serializedVersion: 2
+        x: 2578
+        y: 2129
+        width: 124
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c327b589a7a02ea43ae47c2b8958cb43
+      internalID: -380958559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_6
+      rect:
+        serializedVersion: 2
+        x: 3058
+        y: 2138
+        width: 124
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8d44ba358fe3d4a870f4b119d88d89
+      internalID: 1973428729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_7
+      rect:
+        serializedVersion: 2
+        x: 3538
+        y: 2138
+        width: 124
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c69f1f4b827a0046a543de309b04e52
+      internalID: -2056813544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_8
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1489
+        width: 163
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b741d20e3f758a45873acdb97a61db3
+      internalID: -1101564844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_9
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 1489
+        width: 154
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b23a5cf031a5a4baaf7ea4277ff8a2
+      internalID: -686377628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_10
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 1498
+        width: 154
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 345afe068aee35c49a32bfeb4991a9dd
+      internalID: 635898294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_11
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 1498
+        width: 154
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f386a8fa83b7f24b982985e1cb365bb
+      internalID: 1144308220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_12
+      rect:
+        serializedVersion: 2
+        x: 2098
+        y: 1489
+        width: 154
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdbc9bb2e842ef54b9c4d87e402aa255
+      internalID: 1739487550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_13
+      rect:
+        serializedVersion: 2
+        x: 2569
+        y: 1478
+        width: 163
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b293083ccf32eb42bd84218be47dfdf
+      internalID: 888458099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_14
+      rect:
+        serializedVersion: 2
+        x: 3058
+        y: 1478
+        width: 154
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02367711cbb5e4844b3f264f5e9ebf0a
+      internalID: 750219805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_15
+      rect:
+        serializedVersion: 2
+        x: 3538
+        y: 1468
+        width: 154
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c512ce3c5f6c849846309c41573f6e
+      internalID: 1907039356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_16
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 848
+        width: 163
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ead3e8d2551de409a9b2794e2a8619
+      internalID: 1330984294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_17
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 848
+        width: 154
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe01fce6795bf14419c0c0f9aa917f24
+      internalID: -1183898469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_18
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 859
+        width: 154
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb8e3ad69dc6b64abc66fe07fc980b3
+      internalID: 690293490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_19
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 859
+        width: 154
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2934914db336a84da56bf4b8ec404d5
+      internalID: 1052798195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_20
+      rect:
+        serializedVersion: 2
+        x: 2068
+        y: 848
+        width: 154
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26b61ab855c38ab469e6003689fd0baf
+      internalID: -941309591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_21
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 838
+        width: 163
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ecb68d3dbf974439db174a10fd2ff4
+      internalID: 1445089097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_22
+      rect:
+        serializedVersion: 2
+        x: 3028
+        y: 838
+        width: 154
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6fd4fb4abefde41b1bc426109e6a0c
+      internalID: -1135860521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_23
+      rect:
+        serializedVersion: 2
+        x: 3508
+        y: 829
+        width: 154
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f330d67fba2beb4da0b3da26c7147e7
+      internalID: 521702224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_24
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 219
+        width: 124
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a06a5ae1be61bf4b8902f6d4716ba92
+      internalID: -1269860340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_25
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 229
+        width: 124
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 796e318326b7edc4abf90e0d52b76979
+      internalID: -911252506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_26
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 238
+        width: 133
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c94714ce28c2648b4ebea2371128e7
+      internalID: -1952915927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_27
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 249
+        width: 124
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aec248bc10eee3943bcac8ed27a6fbd9
+      internalID: -910163626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_28
+      rect:
+        serializedVersion: 2
+        x: 2098
+        y: 219
+        width: 124
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba3cc8165b38cf4f80ee879b39a0af0
+      internalID: 2060711006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_29
+      rect:
+        serializedVersion: 2
+        x: 2578
+        y: 229
+        width: 124
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c870279aec220429ae23bab6684777
+      internalID: -1535780551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_30
+      rect:
+        serializedVersion: 2
+        x: 3058
+        y: 238
+        width: 133
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fcbba72d8334304e9113b0e3eff93f2
+      internalID: 2124337110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Oribici_walk_31
+      rect:
+        serializedVersion: 2
+        x: 3538
+        y: 249
+        width: 124
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53691d6eaaf47eb47ae3be2769cfdc01
+      internalID: -535067378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Oribici_walk_0: 261676745
+      Oribici_walk_1: -672927598
+      Oribici_walk_10: 635898294
+      Oribici_walk_11: 1144308220
+      Oribici_walk_12: 1739487550
+      Oribici_walk_13: 888458099
+      Oribici_walk_14: 750219805
+      Oribici_walk_15: 1907039356
+      Oribici_walk_16: 1330984294
+      Oribici_walk_17: -1183898469
+      Oribici_walk_18: 690293490
+      Oribici_walk_19: 1052798195
+      Oribici_walk_2: -158705730
+      Oribici_walk_20: -941309591
+      Oribici_walk_21: 1445089097
+      Oribici_walk_22: -1135860521
+      Oribici_walk_23: 521702224
+      Oribici_walk_24: -1269860340
+      Oribici_walk_25: -911252506
+      Oribici_walk_26: -1952915927
+      Oribici_walk_27: -910163626
+      Oribici_walk_28: 2060711006
+      Oribici_walk_29: -1535780551
+      Oribici_walk_3: 1563842381
+      Oribici_walk_30: 2124337110
+      Oribici_walk_31: -535067378
+      Oribici_walk_4: -1175177009
+      Oribici_walk_5: -380958559
+      Oribici_walk_6: 1973428729
+      Oribici_walk_7: -2056813544
+      Oribici_walk_8: -1101564844
+      Oribici_walk_9: -686377628
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
         Attack();
         Shooting();
 
-        projectileText.text = "Disparos: " + currentProjectile;
+        //projectileText.text = "Disparos: " + currentProjectile;
     }
 
     public void Walk()
@@ -169,6 +169,12 @@ public class PlayerController : MonoBehaviour
     {
         float normalizedHealth = (float)currentHealth / maxHealth;
         healthFull.fillAmount = normalizedHealth;
+    }
+
+    public void Heal(int amount)
+    {
+        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+        UpdateHealthBar();
     }
 
     private void OnDrawGizmosSelected()
