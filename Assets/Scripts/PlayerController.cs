@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
     private bool isWalk = false;
     private bool isShooting = false;
     private bool isDead = false;
+    public bool canMove = true;
 
     // Start is called before the first frame update
     void Start()
@@ -58,6 +59,12 @@ public class PlayerController : MonoBehaviour
     {
         if (isDead)
         {
+            return;
+        }
+
+        if (!canMove)
+        {
+            rig.velocity = Vector2.zero;
             return;
         }
 
@@ -121,6 +128,15 @@ public class PlayerController : MonoBehaviour
             if (enemyScript != null)
             {
                 enemyScript.TakeDamage(1);
+                continue;
+            }
+
+            BossController boss = enemy.GetComponent<BossController>();
+            
+            if(boss != null)
+            {
+                boss.TakeDamage(1);
+                continue;
             }
         }
     }
