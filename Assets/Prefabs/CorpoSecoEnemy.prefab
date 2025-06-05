@@ -187,7 +187,7 @@ MonoBehaviour:
   speedEnemy: 8
   maxHealth: 2
   damageInPlayer: 5
-  dropChance: 40
+  dropChance: 50
   projectilePickupPrefab: {fileID: 5782984122660974225, guid: da32bb402f5d65c428c76356ecda72b7, type: 3}
 --- !u!1 &5181012710291857876
 GameObject:

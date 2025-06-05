@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd7b0c0ab905aa34994309eb08a240dd, type: 3}
+  m_Name: Dialog03
+  m_EditorClassIdentifier: 
+  actorName: Uirapuru
+  text: Esse lugar tomou minhas forcas, colete 4 cestos misticos que estao espalhados
+    por aqui, mas cuidado com os corpos secos
