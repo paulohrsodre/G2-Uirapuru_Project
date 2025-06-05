@@ -29,12 +29,14 @@ public class PlayerController : MonoBehaviour
     public Text projectileText;
     public Image healthFull;
     public Image healthBack;
+    public GameObject deathPanel;
 
     private Rigidbody2D rig;
     private Animator anim;
     private Vector2 lastDirection = Vector2.down;
     private bool isWalk = false;
     private bool isShooting = false;
+    private bool isDead = false;
 
     // Start is called before the first frame update
     void Start()
@@ -44,11 +46,21 @@ public class PlayerController : MonoBehaviour
         currentProjectile = maxProjectile;
         currentHealth = maxHealth;
         UpdateHealthBar();
+
+        if(deathPanel != null)
+        {
+            deathPanel.SetActive(false);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (isDead)
+        {
+            return;
+        }
+
         Walk();
         Attack();
         Shooting();
@@ -149,6 +161,11 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        if (isDead)
+        {
+            return;
+        }
+
         currentHealth -= damage;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
 
@@ -162,7 +179,11 @@ public class PlayerController : MonoBehaviour
 
     private void Death()
     {
-        SceneManager.LoadScene(0);
+        isDead = true;
+        rig.isKinematic = true;
+        anim.SetTrigger("death");
+
+        StartCoroutine(ShowDeathPanelWithDelay(1.5f));
     }
 
     private void UpdateHealthBar()
@@ -175,6 +196,35 @@ public class PlayerController : MonoBehaviour
     {
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         UpdateHealthBar();
+    }
+
+    IEnumerator ShowDeathPanelWithDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        Time.timeScale = 0f;
+
+        if(deathPanel != null)
+        {
+            deathPanel.SetActive(true);
+        }
+    }
+
+    public void Retry()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void BackToMainMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(0);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 
     private void OnDrawGizmosSelected()
