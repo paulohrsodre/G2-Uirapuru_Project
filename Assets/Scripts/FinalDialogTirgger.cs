@@ -5,40 +5,42 @@ using UnityEngine.SceneManagement;
 
 public class FinalDialogTirgger : MonoBehaviour
 {
-    public DialogueManager dialogManager;
     public List<DialogueLine> finalLines;
-    public PlayerController player;
 
+    public DialogueManager dialogManager;
+    public PlayerController player;
     private bool triggered = false;
 
-    private void Start()
+    private void Awake()
     {
+        // Tenta encontrar automaticamente o DialogueManager e o PlayerController na cena
+        dialogManager = FindObjectOfType<DialogueManager>();
+        player = FindObjectOfType<PlayerController>();
+
         if (dialogManager == null)
-        {
-            dialogManager = FindObjectOfType<DialogueManager>();
-        }
+            Debug.LogError("DialogueManager não encontrado na cena.");
 
         if (player == null)
-        {
-            player = FindObjectOfType<PlayerController>();
-        }
+            Debug.LogError("PlayerController não encontrado na cena.");
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (triggered || !collision.CompareTag("Player"))
-        {
+        if (triggered || dialogManager == null || player == null)
             return;
+
+        if (collision.CompareTag("Player"))
+        {
+            triggered = true;
+
+            // Inicia o diálogo final e chama a troca de cena ao fim
+            dialogManager.SetupDialogue(finalLines, player, () => StartCoroutine(LoadNextSceneAfterDelay()));
         }
-
-        triggered = true;
-
-        dialogManager.SetupDialogue(finalLines, player, () => StartCoroutine(LoadNextSceneAfterDelay()));
     }
 
     private IEnumerator LoadNextSceneAfterDelay()
     {
         yield return new WaitForSeconds(3f);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(0); // Mude para o nome ou índice da próxima cena
     }
 }

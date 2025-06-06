@@ -20,6 +20,11 @@ public class BossController : MonoBehaviour
     private Rigidbody2D rig;
     private Animator anim;
 
+    [Header("Others")]
+    [SerializeField] private GameObject dialogueTriggerPrefab;
+    [SerializeField] private DialogueManager dialogueManager;
+    [SerializeField] private PlayerController playerController;
+
     private void Start()
     {
         currentHealth = maxHealth;
@@ -71,6 +76,11 @@ public class BossController : MonoBehaviour
         DropPickUp();
 
         Destroy(gameObject, 2f);
+
+        GameObject trigger = Instantiate(dialogueTriggerPrefab, transform.position, Quaternion.identity);
+        FinalDialogTirgger triggerScript = trigger.GetComponent<FinalDialogTirgger>();
+        triggerScript.dialogManager = dialogueManager;
+        triggerScript.player = playerController;
     }
 
     private void DropPickUp()
