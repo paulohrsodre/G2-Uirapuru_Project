@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     public float speed;
+    public float damageFlashDuration;
 
     [Header("Projectile Settings")]
     public float projectileSpeed;
@@ -31,9 +32,16 @@ public class PlayerController : MonoBehaviour
     public Image healthBack;
     public GameObject deathPanel;
 
+    [Header("Audio Settings")]
+    public AudioSource audioSource;
+    public AudioClip walkClip;
+    public AudioSource meleeClip;
+    public AudioSource shootClip;
+
     private Rigidbody2D rig;
     private Animator anim;
     private Vector2 lastDirection = Vector2.down;
+    private SpriteRenderer spriteRenderer;
     private bool isWalk = false;
     private bool isShooting = false;
     private bool isDead = false;
@@ -46,6 +54,7 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         currentProjectile = maxProjectile;
         currentHealth = maxHealth;
+        spriteRenderer = GetComponent<SpriteRenderer>();
         UpdateHealthBar();
 
         if(deathPanel != null)
@@ -72,7 +81,7 @@ public class PlayerController : MonoBehaviour
         Attack();
         Shooting();
 
-        //projectileText.text = "Disparos: " + currentProjectile;
+        projectileText.text = currentProjectile.ToString();
     }
 
     public void Walk()
@@ -98,6 +107,23 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("axisX", lastDirection.x);
         anim.SetFloat("axisY", lastDirection.y);
         anim.SetBool("walk", isWalk);
+
+        if (isWalk)
+        {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.clip = walkClip;
+                audioSource.loop = true;
+                audioSource.Play();
+            }
+        }
+        else
+        {
+            if(audioSource.isPlaying && audioSource.clip == walkClip)
+            {
+                audioSource.Stop();
+            }
+        }
     }
 
     public void Attack()
@@ -105,6 +131,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             anim.SetTrigger("attack");
+            meleeClip.Play();
         }
     }
 
@@ -114,6 +141,7 @@ public class PlayerController : MonoBehaviour
         {
             isShooting = true;
             anim.SetTrigger("shoot");
+            shootClip.Play();
         }
     }
 
@@ -162,7 +190,8 @@ public class PlayerController : MonoBehaviour
         projectile.GetComponent<Rigidbody2D>().velocity = lastDirection * projectileSpeed;
 
         float angle = Mathf.Atan2(lastDirection.y, lastDirection.x) * Mathf.Rad2Deg;
-        projectile.transform.rotation = Quaternion.Euler(0, 0, angle - 90f);
+        projectile.transform.rotation = Quaternion.Euler(0, 0, angle);
+
     }
 
     public void EndShoot()
@@ -181,6 +210,8 @@ public class PlayerController : MonoBehaviour
         {
             return;
         }
+
+        StartCoroutine(RedFlash());
 
         currentHealth -= damage;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
@@ -224,6 +255,15 @@ public class PlayerController : MonoBehaviour
         {
             deathPanel.SetActive(true);
         }
+    }
+
+    IEnumerator RedFlash()
+    {
+        spriteRenderer.color = Color.red;
+
+        yield return new WaitForSeconds(damageFlashDuration);
+
+        spriteRenderer.color = Color.white;
     }
 
     public void Retry()

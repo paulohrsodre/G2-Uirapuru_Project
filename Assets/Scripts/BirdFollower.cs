@@ -9,6 +9,13 @@ public class BirdFollower : MonoBehaviour
     public float followSpeed;
     public float stopDistance;
 
+    private Animator anim;
+
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -17,11 +24,17 @@ public class BirdFollower : MonoBehaviour
             return;
         }
 
-        float distance = Vector2.Distance(transform.position, player.position);
+        Vector2 direction = player.position - transform.position;
+        float distance = direction.magnitude;
 
         if(distance > stopDistance)
         {
+            Vector2 moveDir = direction.normalized;
+
             transform.position = Vector2.Lerp(transform.position, player.position, followSpeed * Time.deltaTime);
+
+            anim.SetFloat("axisX", moveDir.x);
+            anim.SetFloat("axisY", moveDir.y);
         }
     }
 }

@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BossController : MonoBehaviour
 {
     public float speedBoss;
     public int maxHealth;
     public int damageInPlayer;
+    public Image healthBar;
 
     [Header("Drop Settings")]
     [Range(0, 100)]
@@ -25,11 +27,14 @@ public class BossController : MonoBehaviour
     [SerializeField] private DialogueManager dialogueManager;
     [SerializeField] private PlayerController playerController;
 
+    private SpriteRenderer spriteRenderer;
+
     private void Start()
     {
         currentHealth = maxHealth;
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null)
@@ -60,6 +65,10 @@ public class BossController : MonoBehaviour
         if (isDead) return;
 
         currentHealth -= amount;
+
+        UpdateHealthBar();
+
+        StartCoroutine(RedFlash());
 
         if (currentHealth <= 0)
         {
@@ -93,6 +102,25 @@ public class BossController : MonoBehaviour
             Vector3 dropPosition = transform.position + new Vector3(offset.x, offset.y, 0f);
 
             Instantiate(projectilePickupPrefab, dropPosition, projectilePickupPrefab.transform.rotation);
+        }
+    }
+
+    private void UpdateHealthBar()
+    {
+        if (healthBar != null)
+        {
+            float normalizedHealth = (float)currentHealth / maxHealth;
+            healthBar.fillAmount = normalizedHealth;
+        }
+    }
+
+    IEnumerator RedFlash()
+    {
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = Color.red;
+            yield return new WaitForSeconds(0.1f);
+            spriteRenderer.color = Color.white;
         }
     }
 

@@ -1,17 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyController : MonoBehaviour
 {
     public float speedEnemy;
     public int maxHealth;
     public int damageInPlayer;
+    public Image healthBar;
+
+    [System.Serializable]
+    public class DropItem
+    {
+        public GameObject itemPrefab;
+        [Range(0f, 100f)] public float dropChance;
+    }
 
     [Header("Drop Settings")]
-    [Range(0, 100)]
-    public float dropChance;
-    public GameObject projectilePickupPrefab;
+    public List<DropItem> dropItems = new List<DropItem>();
 
     private int currentHealth;
     private bool isChasing = false;
@@ -21,6 +28,7 @@ public class EnemyController : MonoBehaviour
 
     private Rigidbody2D rig;
     private Animator anim;
+    private SpriteRenderer spriteRenderer;
 
     private Vector3 spawnPosition => transform.position;
 
@@ -31,6 +39,7 @@ public class EnemyController : MonoBehaviour
         originalPosition = transform.position;
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -93,6 +102,10 @@ public class EnemyController : MonoBehaviour
 
         currentHealth -= amount;
 
+        UpdateHealthBar();
+
+        StartCoroutine(RedFlash());
+
         if (currentHealth <= 0)
         {
             Death();
@@ -110,18 +123,39 @@ public class EnemyController : MonoBehaviour
         Destroy(gameObject, 2f);
     }
 
+    private void UpdateHealthBar()
+    {
+        if (healthBar != null)
+        {
+            float normalizedHealth = (float)currentHealth / maxHealth;
+            healthBar.fillAmount = normalizedHealth;
+        }
+    }
+
     private void DropPickUp()
     {
-        float roll = Random.Range(0f, 100f);
-
-        if (roll <= dropChance && projectilePickupPrefab != null)
+        foreach (DropItem drop in dropItems)
         {
-            Vector2 offset = Random.insideUnitCircle.normalized * 0.5f;
-            Vector3 dropPosition = transform.position + new Vector3(offset.x, offset.y, 0f);
+            float roll = Random.Range(0f, 100f);
 
-            Instantiate(projectilePickupPrefab, dropPosition, projectilePickupPrefab.transform.rotation);
+            if (roll <= drop.dropChance && drop.itemPrefab != null)
+            {
+                Vector2 offset = Random.insideUnitCircle.normalized * 0.5f;
+                Vector3 dropPosition = transform.position + new Vector3(offset.x, offset.y, 0f);
 
-            Debug.Log("Drop offset: " + offset);
+                Instantiate(drop.itemPrefab, dropPosition, drop.itemPrefab.transform.rotation);
+                Debug.Log($"Dropped {drop.itemPrefab.name} at offset {offset}, roll: {roll}, chance: {drop.dropChance}");
+            }
+        }
+    }
+
+    IEnumerator RedFlash()
+    {
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = Color.red;
+            yield return new WaitForSeconds(0.1f);
+            spriteRenderer.color = Color.white;
         }
     }
 
