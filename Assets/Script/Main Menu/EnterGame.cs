@@ -5,10 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class EnterGame : MonoBehaviour
 {
-    
     public void Comecar()
     {
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadScene(1);
     }
-       
 }
