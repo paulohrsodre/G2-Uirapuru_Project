@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1000
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -93,6 +93,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -100,10 +126,10 @@ TextureImporter:
       name: CorpoSeco-Attack_0
       rect:
         serializedVersion: 2
-        x: 80
-        y: 1030
-        width: 140
-        height: 160
+        x: 0
+        y: 960
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,10 +147,10 @@ TextureImporter:
       name: CorpoSeco-Attack_1
       rect:
         serializedVersion: 2
-        x: 400
-        y: 1040
-        width: 140
-        height: 150
+        x: 320
+        y: 960
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,10 +168,10 @@ TextureImporter:
       name: CorpoSeco-Attack_2
       rect:
         serializedVersion: 2
-        x: 720
-        y: 1040
-        width: 140
-        height: 150
+        x: 640
+        y: 960
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,10 +189,10 @@ TextureImporter:
       name: CorpoSeco-Attack_3
       rect:
         serializedVersion: 2
-        x: 1060
-        y: 1000
-        width: 130
-        height: 190
+        x: 960
+        y: 960
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +210,10 @@ TextureImporter:
       name: CorpoSeco-Attack_4
       rect:
         serializedVersion: 2
-        x: 1370
-        y: 1040
-        width: 130
-        height: 150
+        x: 1280
+        y: 960
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,10 +231,10 @@ TextureImporter:
       name: CorpoSeco-Attack_5
       rect:
         serializedVersion: 2
-        x: 1690
-        y: 1040
-        width: 140
-        height: 150
+        x: 1600
+        y: 960
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,10 +252,10 @@ TextureImporter:
       name: CorpoSeco-Attack_6
       rect:
         serializedVersion: 2
-        x: 100
-        y: 730
-        width: 110
-        height: 130
+        x: 0
+        y: 640
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,10 +273,10 @@ TextureImporter:
       name: CorpoSeco-Attack_7
       rect:
         serializedVersion: 2
-        x: 410
-        y: 730
-        width: 110
-        height: 130
+        x: 320
+        y: 640
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,10 +294,10 @@ TextureImporter:
       name: CorpoSeco-Attack_8
       rect:
         serializedVersion: 2
-        x: 740
-        y: 730
-        width: 100
-        height: 130
+        x: 640
+        y: 640
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,10 +315,10 @@ TextureImporter:
       name: CorpoSeco-Attack_9
       rect:
         serializedVersion: 2
-        x: 1060
-        y: 730
-        width: 170
-        height: 130
+        x: 960
+        y: 640
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,10 +336,10 @@ TextureImporter:
       name: CorpoSeco-Attack_10
       rect:
         serializedVersion: 2
-        x: 1380
-        y: 730
-        width: 100
-        height: 130
+        x: 1280
+        y: 640
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,10 +357,10 @@ TextureImporter:
       name: CorpoSeco-Attack_11
       rect:
         serializedVersion: 2
-        x: 1690
-        y: 730
-        width: 110
-        height: 130
+        x: 1600
+        y: 640
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,10 +378,10 @@ TextureImporter:
       name: CorpoSeco-Attack_12
       rect:
         serializedVersion: 2
-        x: 110
-        y: 410
-        width: 110
-        height: 130
+        x: 0
+        y: 320
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,10 +399,10 @@ TextureImporter:
       name: CorpoSeco-Attack_13
       rect:
         serializedVersion: 2
-        x: 440
-        y: 410
-        width: 110
-        height: 130
+        x: 320
+        y: 320
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,10 +420,10 @@ TextureImporter:
       name: CorpoSeco-Attack_14
       rect:
         serializedVersion: 2
-        x: 760
-        y: 410
-        width: 100
-        height: 130
+        x: 640
+        y: 320
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,10 +441,10 @@ TextureImporter:
       name: CorpoSeco-Attack_15
       rect:
         serializedVersion: 2
-        x: 1010
-        y: 410
-        width: 170
-        height: 130
+        x: 960
+        y: 320
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,10 +462,10 @@ TextureImporter:
       name: CorpoSeco-Attack_16
       rect:
         serializedVersion: 2
-        x: 1400
-        y: 410
-        width: 100
-        height: 130
+        x: 1280
+        y: 320
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,10 +483,10 @@ TextureImporter:
       name: CorpoSeco-Attack_17
       rect:
         serializedVersion: 2
-        x: 1720
-        y: 410
-        width: 110
-        height: 130
+        x: 1600
+        y: 320
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,10 +504,10 @@ TextureImporter:
       name: CorpoSeco-Attack_18
       rect:
         serializedVersion: 2
-        x: 100
-        y: 90
-        width: 130
-        height: 140
+        x: 0
+        y: 0
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -499,10 +525,10 @@ TextureImporter:
       name: CorpoSeco-Attack_19
       rect:
         serializedVersion: 2
-        x: 420
-        y: 90
-        width: 130
-        height: 140
+        x: 320
+        y: 0
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -520,10 +546,10 @@ TextureImporter:
       name: CorpoSeco-Attack_20
       rect:
         serializedVersion: 2
-        x: 740
-        y: 90
-        width: 140
-        height: 140
+        x: 640
+        y: 0
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -541,10 +567,10 @@ TextureImporter:
       name: CorpoSeco-Attack_21
       rect:
         serializedVersion: 2
-        x: 1060
-        y: 90
-        width: 130
-        height: 190
+        x: 960
+        y: 0
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -562,10 +588,10 @@ TextureImporter:
       name: CorpoSeco-Attack_22
       rect:
         serializedVersion: 2
-        x: 1380
-        y: 90
-        width: 140
-        height: 140
+        x: 1280
+        y: 0
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -583,10 +609,10 @@ TextureImporter:
       name: CorpoSeco-Attack_23
       rect:
         serializedVersion: 2
-        x: 1700
-        y: 90
-        width: 130
-        height: 140
+        x: 1600
+        y: 0
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

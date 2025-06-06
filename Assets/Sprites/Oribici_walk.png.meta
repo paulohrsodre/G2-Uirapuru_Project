@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -93,6 +93,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -100,10 +126,10 @@ TextureImporter:
       name: Oribici_walk_0
       rect:
         serializedVersion: 2
-        x: 178
-        y: 2129
-        width: 124
-        height: 232
+        x: 0
+        y: 1920
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,10 +147,10 @@ TextureImporter:
       name: Oribici_walk_1
       rect:
         serializedVersion: 2
-        x: 658
-        y: 2119
-        width: 124
-        height: 242
+        x: 480
+        y: 1920
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,10 +168,10 @@ TextureImporter:
       name: Oribici_walk_2
       rect:
         serializedVersion: 2
-        x: 1138
-        y: 2138
-        width: 124
-        height: 223
+        x: 960
+        y: 1920
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,10 +189,10 @@ TextureImporter:
       name: Oribici_walk_3
       rect:
         serializedVersion: 2
-        x: 1618
-        y: 2138
-        width: 124
-        height: 223
+        x: 1440
+        y: 1920
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +210,10 @@ TextureImporter:
       name: Oribici_walk_4
       rect:
         serializedVersion: 2
-        x: 2098
-        y: 2129
-        width: 124
-        height: 232
+        x: 1920
+        y: 1920
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,10 +231,10 @@ TextureImporter:
       name: Oribici_walk_5
       rect:
         serializedVersion: 2
-        x: 2578
-        y: 2129
-        width: 124
-        height: 232
+        x: 2400
+        y: 1920
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,10 +252,10 @@ TextureImporter:
       name: Oribici_walk_6
       rect:
         serializedVersion: 2
-        x: 3058
-        y: 2138
-        width: 124
-        height: 223
+        x: 2880
+        y: 1920
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,10 +273,10 @@ TextureImporter:
       name: Oribici_walk_7
       rect:
         serializedVersion: 2
-        x: 3538
-        y: 2138
-        width: 124
-        height: 223
+        x: 3360
+        y: 1920
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,10 +294,10 @@ TextureImporter:
       name: Oribici_walk_8
       rect:
         serializedVersion: 2
-        x: 169
-        y: 1489
-        width: 163
-        height: 253
+        x: 0
+        y: 1280
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,10 +315,10 @@ TextureImporter:
       name: Oribici_walk_9
       rect:
         serializedVersion: 2
-        x: 658
-        y: 1489
-        width: 154
-        height: 242
+        x: 480
+        y: 1280
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,10 +336,10 @@ TextureImporter:
       name: Oribici_walk_10
       rect:
         serializedVersion: 2
-        x: 1138
-        y: 1498
-        width: 154
-        height: 233
+        x: 960
+        y: 1280
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,10 +357,10 @@ TextureImporter:
       name: Oribici_walk_11
       rect:
         serializedVersion: 2
-        x: 1618
-        y: 1498
-        width: 154
-        height: 244
+        x: 1440
+        y: 1280
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,10 +378,10 @@ TextureImporter:
       name: Oribici_walk_12
       rect:
         serializedVersion: 2
-        x: 2098
-        y: 1489
-        width: 154
-        height: 253
+        x: 1920
+        y: 1280
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,10 +399,10 @@ TextureImporter:
       name: Oribici_walk_13
       rect:
         serializedVersion: 2
-        x: 2569
-        y: 1478
-        width: 163
-        height: 253
+        x: 2400
+        y: 1280
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,10 +420,10 @@ TextureImporter:
       name: Oribici_walk_14
       rect:
         serializedVersion: 2
-        x: 3058
-        y: 1478
-        width: 154
-        height: 253
+        x: 2880
+        y: 1280
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,10 +441,10 @@ TextureImporter:
       name: Oribici_walk_15
       rect:
         serializedVersion: 2
-        x: 3538
-        y: 1468
-        width: 154
-        height: 263
+        x: 3360
+        y: 1280
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,10 +462,10 @@ TextureImporter:
       name: Oribici_walk_16
       rect:
         serializedVersion: 2
-        x: 148
-        y: 848
-        width: 163
-        height: 253
+        x: 0
+        y: 640
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,10 +483,10 @@ TextureImporter:
       name: Oribici_walk_17
       rect:
         serializedVersion: 2
-        x: 628
-        y: 848
-        width: 154
-        height: 244
+        x: 480
+        y: 640
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,10 +504,10 @@ TextureImporter:
       name: Oribici_walk_18
       rect:
         serializedVersion: 2
-        x: 1108
-        y: 859
-        width: 154
-        height: 233
+        x: 960
+        y: 640
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -499,10 +525,10 @@ TextureImporter:
       name: Oribici_walk_19
       rect:
         serializedVersion: 2
-        x: 1588
-        y: 859
-        width: 154
-        height: 242
+        x: 1440
+        y: 640
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -520,10 +546,10 @@ TextureImporter:
       name: Oribici_walk_20
       rect:
         serializedVersion: 2
-        x: 2068
-        y: 848
-        width: 154
-        height: 253
+        x: 1920
+        y: 640
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -541,10 +567,10 @@ TextureImporter:
       name: Oribici_walk_21
       rect:
         serializedVersion: 2
-        x: 2548
-        y: 838
-        width: 163
-        height: 254
+        x: 2400
+        y: 640
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -562,10 +588,10 @@ TextureImporter:
       name: Oribici_walk_22
       rect:
         serializedVersion: 2
-        x: 3028
-        y: 838
-        width: 154
-        height: 254
+        x: 2880
+        y: 640
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -583,10 +609,10 @@ TextureImporter:
       name: Oribici_walk_23
       rect:
         serializedVersion: 2
-        x: 3508
-        y: 829
-        width: 154
-        height: 263
+        x: 3360
+        y: 640
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -604,10 +630,10 @@ TextureImporter:
       name: Oribici_walk_24
       rect:
         serializedVersion: 2
-        x: 178
-        y: 219
-        width: 124
-        height: 233
+        x: 0
+        y: 0
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -625,10 +651,10 @@ TextureImporter:
       name: Oribici_walk_25
       rect:
         serializedVersion: 2
-        x: 658
-        y: 229
-        width: 124
-        height: 223
+        x: 480
+        y: 0
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -646,10 +672,10 @@ TextureImporter:
       name: Oribici_walk_26
       rect:
         serializedVersion: 2
-        x: 1129
-        y: 238
-        width: 133
-        height: 214
+        x: 960
+        y: 0
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -667,10 +693,10 @@ TextureImporter:
       name: Oribici_walk_27
       rect:
         serializedVersion: 2
-        x: 1618
-        y: 249
-        width: 124
-        height: 203
+        x: 1440
+        y: 0
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -688,10 +714,10 @@ TextureImporter:
       name: Oribici_walk_28
       rect:
         serializedVersion: 2
-        x: 2098
-        y: 219
-        width: 124
-        height: 233
+        x: 1920
+        y: 0
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -709,10 +735,10 @@ TextureImporter:
       name: Oribici_walk_29
       rect:
         serializedVersion: 2
-        x: 2578
-        y: 229
-        width: 124
-        height: 223
+        x: 2400
+        y: 0
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -730,10 +756,10 @@ TextureImporter:
       name: Oribici_walk_30
       rect:
         serializedVersion: 2
-        x: 3058
-        y: 238
-        width: 133
-        height: 214
+        x: 2880
+        y: 0
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -751,10 +777,10 @@ TextureImporter:
       name: Oribici_walk_31
       rect:
         serializedVersion: 2
-        x: 3538
-        y: 249
-        width: 124
-        height: 203
+        x: 3360
+        y: 0
+        width: 480
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
