@@ -96,5 +96,7 @@ public class DialogueIntroManager : MonoBehaviour
         {
             player.canMove = true;
         }
+
+        this.enabled = false;
     }
 }

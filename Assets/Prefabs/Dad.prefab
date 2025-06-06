@@ -120,12 +120,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4f9521f1bc06bc429f9c93aa31f2cc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogManager: {fileID: 0}
   finalLines:
   - {fileID: 11400000, guid: fae07ef960d05e8478be67d1607c343d, type: 2}
   - {fileID: 11400000, guid: e6a6114d9fc75ef47bdd1284d26cf7c5, type: 2}
   - {fileID: 11400000, guid: 34b03ce6921608a4082948ccd6ebdcac, type: 2}
-  player: {fileID: 0}
+  dialogManager: {fileID: 4038034520080341900, guid: d85266d7d50401346bec459c34b7dea7, type: 3}
+  player: {fileID: 7596805038072614841, guid: aaeaba6608a315549b252f1be93c1ad4, type: 3}
 --- !u!58 &-7811381135210727431
 CircleCollider2D:
   m_ObjectHideFlags: 0

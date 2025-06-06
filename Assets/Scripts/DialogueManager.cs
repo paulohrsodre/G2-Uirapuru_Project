@@ -10,17 +10,17 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
     public GameObject dialoguePanel;
 
-    public float typingSpeed = 0.05f;
+    [Header("Typing Settings")]
+    public float typingSpeed = 0.03f;
 
-    private List<DialogueLine> dialogLines;
+    private List<DialogueLine> currentLines;
     private int currentLineIndex;
     private bool isTyping;
     private Coroutine typingCoroutine;
-    private Action onDialogEnd;
 
     private PlayerController player;
-
-    private bool isActive = false;
+    private Action onDialogEnd;
+    private bool isActive;
 
     void Update()
     {
@@ -31,7 +31,7 @@ public class DialogueManager : MonoBehaviour
             if (isTyping)
             {
                 StopCoroutine(typingCoroutine);
-                dialogueText.text = dialogLines[currentLineIndex].text;
+                dialogueText.text = currentLines[currentLineIndex].text;
                 isTyping = false;
             }
             else
@@ -43,11 +43,16 @@ public class DialogueManager : MonoBehaviour
 
     public void SetupDialogue(List<DialogueLine> lines, PlayerController playerRef, Action onEnd = null)
     {
-        dialogLines = lines;
+        if (lines == null || lines.Count == 0)
+        {
+            Debug.LogWarning("No dialogue lines provided.");
+            return;
+        }
+
+        currentLines = lines;
+        currentLineIndex = 0;
         player = playerRef;
         onDialogEnd = onEnd;
-
-        currentLineIndex = 0;
         isActive = true;
 
         if (player != null)
@@ -59,17 +64,17 @@ public class DialogueManager : MonoBehaviour
 
     private void ShowLine()
     {
-        if (currentLineIndex >= dialogLines.Count)
-        {
-            EndDialog();
-            return;
-        }
+        dialoguePanel.SetActive(true); // Garante visibilidade mesmo se desativado antes
 
-        nameText.text = dialogLines[currentLineIndex].actorName;
-        typingCoroutine = StartCoroutine(TypeText(dialogLines[currentLineIndex].text));
+        nameText.text = currentLines[currentLineIndex].actorName;
+
+        if (typingCoroutine != null)
+            StopCoroutine(typingCoroutine);
+
+        typingCoroutine = StartCoroutine(TypeText(currentLines[currentLineIndex].text));
     }
 
-    IEnumerator TypeText(string text)
+    private IEnumerator TypeText(string text)
     {
         isTyping = true;
         dialogueText.text = "";
@@ -86,13 +91,20 @@ public class DialogueManager : MonoBehaviour
     private void NextLine()
     {
         currentLineIndex++;
+
+        if (currentLineIndex >= currentLines.Count)
+        {
+            EndDialog();
+            return;
+        }
+
         ShowLine();
     }
 
     private void EndDialog()
     {
-        dialoguePanel.SetActive(false);
         isActive = false;
+        dialoguePanel.SetActive(false);
 
         if (player != null)
             player.canMove = true;
