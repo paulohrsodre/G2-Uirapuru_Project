@@ -11,6 +11,8 @@ public class ExitGame : MonoBehaviour
             Debug.Log("Exit");
 #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
+#elif UNITY_WEBGL
+        Aplication.OpenURL("https://google.com.br/");
 #else
             Application.Quit();
 #endif
